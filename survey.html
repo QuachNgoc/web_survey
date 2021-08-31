@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey of Satisfaction on Apple Products.">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=040820022-20&marketplace=amazon&amp;region=US&placement=B07ZPC9QD4&asins=B07ZPC9QD4&linkId=6e23fe1195c3d4327a9cdcfbc3eebf38&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=040820022-20&marketplace=amazon&amp;region=US&placement=B01M0GB8CC&asins=B01M0GB8CC&linkId=c0cddac940798faaac9b4635eef8ad9d&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+
+  <div class="container">
+    <div class="header">
+      <div class="column-header">
+        <h1 id="title">Apple Products Survey</h1>
+          <p id="description">We would like to know a little more about your experience with the product. Thank you for taking the time to help us improve the product.</p>
+      </div>
+
+      <div class="column-image">
+        <div id="image-div">
+          <img src="./static/images/survey_preview.jpg" width="400" height="400" alt="Survey form icon">
+        </div>
+      </div>
+  </div>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+
+    
+    <div class="form-group">
+      <p>Employment Status</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your current status</option>
+        <option value="student">Student</option>
+        <option value="job-full">Employed Full Time</option>
+        <option value="job-part">Employed Part Time</option>
+        <option value="self-employed">Self-employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Your favorite products</p>
+      <select id="experience-dropdown" name="experience" class="form-control" required>
+        <option disabled selected value>Select your favorite products</option>
+        <option value="Iphone">Iphone</option>
+        <option value="Ipad">Ipad</option>
+        <option value="Macbook">Macbook</option>
+        <option value="Airpods">Airpods</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Overall, how would you rate its design?</p>
+      <label>
+        <input
+          name="user-rate"
+          value="Luxurious"
+          type="radio"
+          class="input-radio"
+          checked
+        />Luxurious</label>
+      <label>
+        <input
+          name="user-rate"
+          value="Lavish"
+          type="radio"
+          class="input-radio"
+        />Lavish
+      </label>
+
+      <label>
+        <input
+          name="user-rate"
+          value="Normal"
+          type="radio"
+          class="input-radio"
+        />Normal</label>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="Not as advertised"
+          type="radio"
+          class="input-radio"
+        />Not as advertised
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <p>How useful were the display?</p>
+      <label>
+        <input
+          name="materials-rate"
+          value="extremely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Extremely useful</label>
+      <label>
+        <input
+          name="materials-rate"
+          value="very"
+          type="radio"
+          class="input-radio"
+        />Very useful
+      </label>
+
+      <label>
+        <input
+          name="materials-rate"
+          value="somewhat"
+          type="radio"
+          class="input-radio"
+        />Somewhat useful
+      </label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="not-so"
+          type="radio"
+          class="input-radio"
+        />Not so useful
+      </label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No useful at all
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend it to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved? ( You can check all that apply )
+      </p>
+
+      <label>
+        <input
+          name="prefer"
+          value="lectures"
+          type="checkbox"
+          class="input-checkbox"
+        />Customer service</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="material"
+          type="checkbox"
+          class="input-checkbox"
+        />Price</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="assignments"
+          type="checkbox"
+          class="input-checkbox"
+        />Consolidate UX for all devices</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="exams"
+          type="checkbox"
+          class="input-checkbox"
+        />The durability of the glass surface needs to be improved</label>
+     
+      <label>
+        <input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Need to upgrade camera quality</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Changes in performance and RAM</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any other comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <form>
+          <button type="submit" id="submit" class="submit-button" formaction="thank_you.html">
+            Submit
+          </button>
+      </form>
+    </div>
+  </form>
+
+   <section class="footer">
+      <p> Design & Development - LLC Survey </p>
+   </section>
+  </div>
+
+</body>
+
+</html>
